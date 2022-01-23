@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+      <title>country</title>
+      <style>
+          *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: greenyellow;
+}
+
+      </style>
+</head>
+
+<body>
+    <div class="container vh-80 p-5">
+        <h1 class="text-center">Universities In all over world</h1>
+        <div>
+            <span class="input-group-text" id="inputGroup-sizing-default">Search University</span>
+            <input type="text"  
+                 onkeydown="searchUniversities()" onkeyup="searchUniversities()">
+                <button class="inputValue">search</button>
+        </div>
+
+        <ul id="universities-list" class="list-group mt-3">
+            
+        </ul>
+    </div>
+
+    <script onload="pushUniversitiesList()" src="mabu.js"></script>
+</body>
+
+</html>
